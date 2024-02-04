@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<struts-config>
+<form-beans>
+<form-bean name="helloForm"
+type="com.example.javawebtutor.form.HelloWorldForm" />
+</form-beans>
+<action-mappings>
+<action name="helloForm" path="/HelloWorld"
+type="com.example.javawebtutor.action.HelloWorldAction" scope="request">
+<forward name="hello" path="/hello.jsp" />
+</action>
+</action-mappings>
+</struts-config>
