@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts-config PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+    "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+    
+<struts-config>
+	
+	<form-beans>
+		<form-bean name="welcomeForm" type="it.alpi.form.WelcomeForm"/>
+		<form-bean name="usernameForm" type="it.alpi.form.UsernameForm"/>
+		<form-bean name="quizForm" type="it.alpi.form.QuizForm"/>
+	</form-beans>
+	
+	<global-forwards>
+		<forward name="welcome" path="/Welcome.do"/>
+	</global-forwards>
+	
+	<action-mappings>
+		
+		<action path="/Welcome" type="it.alpi.action.WelcomeAction" name="welcomeForm">
+			<forward name="success" path="/file/pages/welcome.jsp"/>
+		</action>
+		
+		<action path="/login" type="it.alpi.action.UsernameAction" name="usernameForm" scope="request">
+			<forward name="allowed" path="/file/pages/success.jsp"/>
+			<forward name="not_allowed" path="/file/pages/failure.jsp"/>
+		</action>
+		
+		<action path="/quiz" type="it.alpi.action.QuizAction" name="quizForm">
+			<forward name="success" path="/file/pages/quiz.jsp"/>
+		</action>
+	
+	</action-mappings>
+	
+	<message-resources parameter="MessageResources"/>
+
+</struts-config>

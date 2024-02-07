@@ -8,9 +8,6 @@
 	
 	<form-beans>
 		<form-bean name="helloWorldForm" type="it.alpitour.form.HelloWorldForm"/>
-	</form-beans>
-	
-	<form-beans>
 		<form-bean name="usernameForm" type="it.alpitour.form.UsernameForm"/>
 	</form-beans>
 	
@@ -22,12 +19,9 @@
 		<action path="/Welcome" type="it.alpitour.action.HelloWorldAction" name="helloWorldForm">
 			<forward name="success" path="/file/pages/welcome.jsp"/>
 		</action>
-	</action-mappings>
-	
-	<action-mappings>
-		<action path="/processInput" type="your.package.ExampleAction" name="exampleForm" scope="request" validate="true" input="/inputForm.jsp">
-        	<forward name="success" path="/success.jsp" />
-        	<forward name="failure" path="/failure.jsp"/>
+		<action path="/inputForm" type="it.alpitour.action.UsernameAction" name="usernameForm" scope="request"  >
+        	<forward name="success" path="/file/pages/success.jsp" />
+        	<forward name="failure" path="/file/pages/failure.jsp" />
     	</action>
 	</action-mappings>
 	

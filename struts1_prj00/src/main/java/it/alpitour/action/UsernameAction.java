@@ -19,15 +19,21 @@ public class UsernameAction extends Action {
 			HttpServletResponse response
 			) throws Exception{
 		
-		UsernameForm username = (UsernameForm) form;
+		UsernameForm usernameNameForm = (UsernameForm) form;
 		
-		String name = username.getUsername();
-		if(name.length() > 0) {
+		String username = usernameNameForm.getUsername();
+		
 			
-			return mapping.findForward("success"); 
-		}else {
-			return mapping.findForward("failure");
-		}
+			request.setAttribute("username", username);
+			
+			if (username.length() > 0) {
+				
+				return mapping.findForward("success"); 
+			}else {
+				
+				return mapping.findForward("failure");
+			}
+
 	}
 
 }

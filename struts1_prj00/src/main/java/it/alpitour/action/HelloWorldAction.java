@@ -13,9 +13,8 @@ import it.alpitour.form.HelloWorldForm;
 public class HelloWorldAction extends Action{
 	
 	public ActionForward execute(ActionMapping mapping, ActionForm form, HttpServletRequest request, HttpServletResponse response) throws Exception{
-		HelloWorldForm hlf = (HelloWorldForm) form;
-		hlf.setMessage("Bongiorno");
 		
+		System.out.println("Hello WOeld action");
 		return mapping.findForward("success");
 		
 	}

@@ -3,8 +3,9 @@
 <%@ taglib uri="http://struts.apache.org/tags-logic" prefix="logic"  %>
 
 <html:html>
+
 	<head>
-		<title><bean:write name="helloWorldForm" property="message"/></title>
+		<title>AAAAAAAAAAAAAAAAA</title>
 	</head>
 	<body bgcolor="white">
 		<logic:notPresent name="org.apache.struts.action.MESSAGE" scope="application">
@@ -17,7 +18,11 @@
 			<bean:message key="welcome.message"/>
 		</h1>
 		
-		<a href="inputForm.jsp">Click here!</a>
+		<html:form action="/inputForm" method="post" >
+			<html:text property="username" size ="20"/>
+			<html:submit value="Submit"/>
+		</html:form>
+		
 		
 	</body>
 </html:html>

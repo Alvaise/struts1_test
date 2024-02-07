@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts-config PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+    "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+    
+<struts-config>
+	
+	<form-beans>
+		<form-bean name="welcomeForm" type="it.alpitour.form.WelcomeForm"/>
+		<form-bean name="docNumberForm" type="it.alpitour.form.DocNumberForm"/>
+	</form-beans>
+	
+	<global-forwards>
+		<forward name="welcome" path="/Welcome.do"/>
+	</global-forwards>
+	
+	<action-mappings>
+		
+		<action path="/Welcome" type="it.alpitour.action.WelcomeAction" name="welcomeForm">
+			<forward name="success" path="/file/pages/welcome.jsp"/>
+		</action>
+		
+		<action path="/checkDocument" type="it.alpitour.action.DocNumberAction" name="docNumberForm" scope="request">
+			<forward name="validDocNumber" path="/file/pages/validDocNumber.jsp"/> 
+			<forward name="invalidDocNumber" path="/file/pages/invalidDocNumber.jsp"/> 
+		</action>
+	</action-mappings>
+	
+	<message-resources parameter="MessageResources"/>
+
+</struts-config>
