@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e0240bdd-33e8-4a9c-a55f-3f8bfef0a1f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WebContent/file/pages/failure.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebContent/file/pages/success.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Servers2/apache-tomcat-8.5.95-login at localhost-config/server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Servers2/apache-tomcat-8.5.95-login at localhost-config/server.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/struts-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/struts-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/file/pages/inputForm.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/file/pages/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/file/pages/welcome.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/it/alpitour/action/HelloWorldAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/it/alpitour/action/HelloWorldAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/it/alpitour/action/UsernameAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/it/alpitour/action/UsernameAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/it/alpitour/form/HelloWorldForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/it/alpitour/form/HelloWorldForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/alpitour/action/HelloWorldAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/alpitour/action/HelloWorldAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/alpitour/action/UsernameAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/alpitour/action/UsernameAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/alpitour/form/HelloWorldForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/alpitour/form/HelloWorldForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../struts1_prj01/WebContent/WEB-INF/struts-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../struts1_prj01/WebContent/WEB-INF/struts-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../struts1_prj01/WebContent/file/fakeDb/question.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../struts1_prj01/WebContent/file/fakeDb/question.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../struts1_prj01/WebContent/file/pages/quiz.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../struts1_prj01/WebContent/file/pages/quiz.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../struts1_prj01/WebContent/file/pages/success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../struts1_prj01/WebContent/file/pages/success.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../struts1_prj01/src/main/java/it/alpi/action/QuizAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../struts1_prj01/src/main/java/it/alpi/action/QuizAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../struts1_prj01/src/main/java/it/alpi/util/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/../struts1_prj01/src/main/java/it/alpi/util/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../struts1_prj02_pratiche_alpitour/WebContent/file/pages/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../struts1_prj02_pratiche_alpitour/WebContent/file/pages/welcome.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,23 +22,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2c24xSMJQbMUNT6xHdwpV29nvnm" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/spadea/eclipse-workspace/struts1_prj00"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/spadea/eclipse-workspace/struts1_prj00&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

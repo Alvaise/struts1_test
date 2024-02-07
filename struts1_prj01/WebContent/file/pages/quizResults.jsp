@@ -15,15 +15,11 @@
 		  </font>
 		</logic:notPresent>
 	 
-		<h1>
-			<bean:message key="welcome.title"/>
-		</h1>
+		<h1><bean:message key="quiz.title"/></h1>
 		
-	
-		<html:form action="/checkDocument" method="post">
-			<html:text property="documentNumber" size="20" />
-			<html:submit value="Interroga"/>
-		</html:form>	
+		
+			 		
+		
 		
 	</body>
 </html:html>

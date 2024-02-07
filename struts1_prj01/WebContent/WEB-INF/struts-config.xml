@@ -10,6 +10,7 @@
 		<form-bean name="welcomeForm" type="it.alpi.form.WelcomeForm"/>
 		<form-bean name="usernameForm" type="it.alpi.form.UsernameForm"/>
 		<form-bean name="quizForm" type="it.alpi.form.QuizForm"/>
+		<form-bean name="userAnswerForm" type="it.alpi.form.UserAnswerForm"/>
 	</form-beans>
 	
 	<global-forwards>
@@ -29,6 +30,10 @@
 		
 		<action path="/quiz" type="it.alpi.action.QuizAction" name="quizForm">
 			<forward name="success" path="/file/pages/quiz.jsp"/>
+		</action>
+		
+		<action path="/answer" type="it.alpi.action.UserAnswerAction" name="userAnswerForm">
+			<forward name="success" path="/file/pages/quizResults.jsp" />
 		</action>
 	
 	</action-mappings>

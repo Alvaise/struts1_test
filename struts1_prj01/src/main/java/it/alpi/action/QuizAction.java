@@ -29,12 +29,13 @@ public class QuizAction extends Action{
 			
 			List<String> questTxt = getQuiz("C:\\Users\\spadea\\eclipse-workspace\\struts1_prj01\\WebContent\\file\\fakeDb\\question.txt");
 			List<String> answerTxt = getQuiz("C:\\Users\\spadea\\eclipse-workspace\\struts1_prj01\\WebContent\\file\\fakeDb\\right_answer.txt");
+			List<String> wrongAnsTxt = getQuiz("C:\\Users\\spadea\\eclipse-workspace\\struts1_prj01\\WebContent\\file\\fakeDb\\wrong_answer.txt");
 			
 			List<Question> questions = new ArrayList<Question>();
 			
 			for (int i = 0; i < questTxt.size(); i++) {
 				
-				questions.add(new Question (questTxt.get(i),answerTxt.get(i)));
+				questions.add(new Question (questTxt.get(i),answerTxt.get(i),wrongAnsTxt.get(i)));
 			}
 			
 			QuizForm quiz = (QuizForm) form;

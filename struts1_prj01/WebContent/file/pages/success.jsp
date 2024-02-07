@@ -12,8 +12,12 @@
 <body>
 	
 	<h1>Successfully Logged In!</h1>
+	<div>
 	<html:link action="/Welcome">Click Here To return!</html:link>
-	<
+	</div>
+	<div>
+	<html:link action="/quiz">Click Here to access the quiz</html:link>
+	</div>
 	
 </body>
 </html>

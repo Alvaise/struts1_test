@@ -17,11 +17,26 @@
 	 
 		<h1><bean:message key="quiz.title"/></h1>
 		
-		<logic:iterate id="questionsId" property="questions" name="quizForm">
-		    	
-			 <html:text name="questionsId" property="question"/>
+			<logic:iterate id="questionsId" property="questions" name="quizForm">
+			    	
+				 	
+				 		<h3>
+				 			<bean:write name="questionsId" property="questionText"/>
+				 		</h3>
+				 			
+				 		
+					<html:form action="/answer">	
+				 		  <input type="radio" id="option1" name="fav_language" value=<bean:write name="questionsId" property="correctAnswer" />>
+						  <label for="option1"><bean:write name="questionsId" property="correctAnswer"/></label><br>
+						  <input type="radio" id="option2" name="fav_language" value=<bean:write name="questionsId" property="wrongAnswer"/>>
+						  <label for="option2"><bean:write name="questionsId" property="wrongAnswer"/></label><br>				 		
+				 		
+						<html:submit value="Submit"/>			
+					</html:form>
+
+			</logic:iterate>
+			
 			 		
-		</logic:iterate>
 		
 		
 	</body>
